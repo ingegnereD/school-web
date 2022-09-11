@@ -34,7 +34,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-    width: .7rem;
+    width: 0rem;
     /* background-color: var(--body-bg-color); */
     background: transparent;
     opacity: 1;
