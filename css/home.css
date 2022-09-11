@@ -1,0 +1,797 @@
+:root {
+    --header-bg-color: #4c3fc7;
+    --header-height: 4rem;
+    --text-color: white;
+    --body-bg-color: #022035;
+    --button-color: #0046ce;
+    --button-hover: #00a5ff;
+    --border-radius-1: 3px;
+    --border-radius-2: 5px;
+    --category-bg-color: #332c71;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    width: .7rem;
+    /* background-color: var(--body-bg-color); */
+    background: transparent;
+    opacity: 1;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 2rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: var(--header-bg-color);
+}
+
+.bt {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius-1);
+    border: none;
+    transition: all 250ms ease;
+    text-decoration: none;
+}
+
+.bt:hover {
+    text-decoration: none;
+}
+
+.containeR {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--body-bg-color);
+    display: grid;
+    grid-template-rows: var(--header-height) calc(100vh - var(--header-height));
+}
+
+.containeR header {
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-bg-color);
+}
+
+header .nav-bar {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    color: var(--text-color);
+}
+
+.left-nav {
+    position: absolute;
+    left: 0;
+}
+
+.middle-nav {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.middle-nav .nav-dest {
+    color: var(--text-color);
+    margin-left: 5rem;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+.middle-nav .nav-dest:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+#menu-bar,
+#close-bar {
+    display: none;
+}
+
+
+/* ..............END OF NAVIGATION............. */
+
+.main-and-footer {
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.welcome-page {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.left-welcome-page {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: -50rem;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    animation: slideIn 500ms ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        left: 0;
+    }
+}
+
+.left-welcome-page>h2 {
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.left-welcome-page>h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+#get-started {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+}
+
+#get-started:hover {
+    background-color: var(--button-color);
+}
+
+.right-welcome-page {
+    position: absolute;
+    top: -50rem;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--body-bg-color);
+    animation: slideDown 500ms ease forwards;
+}
+
+@keyframes slideDown {
+    to {
+        top: 0;
+        right: 0;
+    }
+}
+
+.welcome-img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* .............END OF WELCOME PAGE............. */
+
+.category-section {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--body-bg-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.category-background {
+    position: absolute;
+    height: 60%;
+    width: 135%;
+    top: 0;
+    background-color: var(--category-bg-color);
+}
+
+.category-bucket {
+    /* background-color: red; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    z-index: 6;
+}
+
+.left-category {
+    width: 40%;
+    margin-top: 4rem;
+    padding-right: 1rem;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+.left-category>h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.left-category>h4 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+#learn-more {
+    background-color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#learn-more:hover {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+}
+
+
+/* .............END OF LEFT CATEGORY............ */
+
+.right-category {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.box {
+    background-color: rgb(78, 50, 176);
+    border-radius: 1.4rem;
+    padding: 1rem;
+    color: var(--text-color);
+    box-shadow: 5px 5px 1px #1f1c40, -5px -5px 1px rgb(78, 50, 176);
+    transition: all 300ms ease;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.box:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.top-box-element {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    margin-bottom: 0.7rem;
+}
+
+#royal {
+    background-color: rgb(61, 4, 218);
+}
+
+
+/* ....................END OF CATEGORY DESIGN............ */
+
+.popular-course-section {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    /* background-color: orchid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-bucket {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2rem calc(100% -7rem);
+    /* background-color: orange; */
+}
+
+.course-bucket>h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    height: 2rem;
+    /* background-color: red; */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-bucket .course-main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course-box {
+    width: 100%;
+    height: 80%;
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #242757;
+    transition: all 300ms ease;
+}
+
+.course-box:hover {
+    background-color: #20095a;
+    transform: scale(1.1);
+}
+
+.course-box-top {
+    height: 40%;
+    margin-bottom: 1.5rem;
+}
+
+.course-img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.course-box .course-box-main {
+    height: 60%;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0rem;
+    font-family: sans-serif;
+    padding: 0.5rem;
+}
+
+.course-box h4 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    /* background-color: wheat; */
+}
+
+.course-box h5 {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#learn-more-course {
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    color: var(--text-color);
+    transition: all 300ms ease;
+}
+
+#learn-more-course:hover {
+    background-color: var(--button-color);
+    font-size: 1.3rem;
+}
+
+
+/* ..................END OF POPULAR COURSES.................. */
+
+.freq-asked-qst {
+    color: var(--text-color);
+    width: 100%;
+    height: fit-content;
+}
+
+.freq-qst-container {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    gap: 1rem;
+}
+
+.freq-qst-top {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.freq-qst-main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.question-box {
+    height: auto;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.add-and-close-and-text {
+    background-color: var(--header-bg-color);
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.add-and-close-and-text-active {
+    background-color: var(--header-bg-color);
+    background-color: #00a5ff;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.add-and-close {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    /* background-color: rebeccapurple; */
+}
+
+
+/* ..............ADD ICON........... */
+
+.add-and-close .plus-icon {
+    height: 100%;
+    padding-top: 1.75rem;
+}
+
+.add-and-close .plus-icon-active {
+    animation: active 100ms ease forwards;
+}
+
+@keyframes active {
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.75);
+    }
+    75% {
+        transform: scale(0.50);
+    }
+    100% {
+        transform: scale(0.25);
+    }
+}
+
+
+/* ................MINUS ICON................. */
+
+.add-and-close .minus-icon {
+    display: none;
+    height: 100%;
+    padding-top: 1.75rem;
+}
+
+.add-and-close .minus-icon-active {
+    animation: active 100ms ease forwards;
+}
+
+@keyframes active {
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.75);
+    }
+    75% {
+        transform: scale(0.50);
+    }
+    100% {
+        transform: scale(0.25);
+    }
+}
+
+.add-and-close-and-text h5 {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.collapsible {
+    height: 100%;
+    background-color: #242757;
+    padding: 0.6rem;
+    display: none;
+}
+
+.collapsible h6 {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.question-box>span {
+    width: 10%;
+    margin-left: 0.5rem;
+}
+
+.question-box>h5 {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/* ..................END OF FREQ ASKED QUESTIONS............... */
+
+
+/* .............................................................. */
+
+
+/* .............................................................. */
+
+
+/* .............................................................. */
+
+.sliding {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    height: 80vh;
+    width: 100%;
+    /* background-color: #0046ce; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliding-box {
+    height: 80%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-rows: 7vh 43vh;
+    gap: 3rem;
+}
+
+.sliding .sliding-header {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.sliding .sliding-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+}
+
+.sliding-container .swiper {
+    height: 100%;
+    width: 75rem;
+    /* background-color: white; */
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 
+.swiper-slide-active {
+    transform: scale(1.2);
+    transition: .4s;
+} */
+
+.swiper-slide .student-body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-bg-color);
+    border: 1px solid var(--category-bg-color);
+    cursor: grabbing;
+}
+
+.student-profile {
+    height: max-content;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    transition: all 300ms ease;
+}
+
+.student-profile:hover {
+    background-color: var(--category-bg-color);
+}
+
+.student-pic {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a5ff;
+    padding: 0.7rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#picture {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.student-profile .name {
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.student-profile>h6 {
+    margin: 0 auto;
+    font-size: 0.9rem;
+    /* background-color: #00a5ff; */
+    width: 100%;
+    height: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonial {
+    height: auto;
+    /* border: 1px solid var(--header-bg-color); */
+    background-color: var(--header-bg-color);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+
+/* .......................FOOTER SECTION............ */
+
+footer {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.footer-container {
+    background-color: #332c71;
+    width: 100%;
+    height: 40vh;
+    color: var(--text-color);
+    display: grid;
+    grid-template-rows: auto 4rem;
+}
+
+.footer-container .top-foot {
+    width: 85%;
+    margin: auto auto;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.column {
+    /* gap: 2rem; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column-head {
+    font-size: 1.1rem;
+    height: 2.2rem;
+}
+
+.column-body {
+    font-size: .9rem;
+    height: 1.9rem;
+}
+
+.school-social {
+    margin-right: 1.3rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#email {
+    cursor: pointer;
+}
+
+#email:hover {
+    color: var(--button-hover);
+}
+
+.bottom-foot {
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 11rem;
+    font-size: 1.1rem;
+    font-weight: 50;
+    border-top: 1px solid var(--header-bg-color);
+}
+
+.bottom-foot>span {
+    margin-left: 0.2rem;
+    margin-right: 0.5rem;
+    /* font-size: 1.; */
+}
+
+.color1 {
+    color: #000003;
+}
+
+.color2 {
+    color: #252746;
+}
+
+.color3 {
+    color: #575891;
+}
+
+.color4 {
+    color: #9390e7;
+}
+
+.color5 {
+    color: #d9cfff;
+}
