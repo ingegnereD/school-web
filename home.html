@@ -8,6 +8,7 @@
     <title>School</title>
     <!-- home style -->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homeMq.css">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -17,6 +18,7 @@
 
 
     <!-- bootstrap -->
+
     <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
 
     <!-- swiper js -->
@@ -31,14 +33,14 @@
                     <h3>CEPHALO</h3>
                 </div>
                 <div class="middle-nav">
-                    <a href="#" class="nav-dest">Home</a>
-                    <a href="#" class="nav-dest">About</a>
-                    <a href="#" class="nav-dest">Courses</a>
-                    <a href="#" class="nav-dest">Contact</a>
+                    <a href="home.html" class="nav-dest nav-d-1"><i class="fa-solid fa-house" id="nav-icon"></i>Home</a>
+                    <a href="about.html" class="nav-dest nav-d-2"><i class="fa-solid fa-question" id="nav-icon"></i>About</a>
+                    <a href="courses.html" class="nav-dest nav-d-3"><i class="fa-solid fa-building-columns" id="nav-icon"></i>Courses</a>
+                    <a href="contact.html" class="nav-dest nav-d-4"><i class="fa-solid fa-address-card" id="nav-icon"></i>Contact</a>
                 </div>
                 <div class="right-nav">
-                    <i class="fa-solid fa-bars" id="menu-bar"></i>
-                    <i class="fa-solid fa-xmark" id="close-bar"></i>
+                    <i class="fa-solid fa-bars menu-bar"></i>
+                    <i class="fa-solid fa-xmark close-bar"></i>
                 </div>
             </div>
         </header>
@@ -48,8 +50,9 @@
                 <div class="main-container">
                     <div class="welcome-page">
                         <div class="left-welcome-page">
-                            <h2>GROW you skils to advance your career path</h2>
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae ullam, ea reiciendis hic architecto reprehenderit doloremque sint eius voluptas sit laborum. Eligendi adipisci fuga eaque autem minus asperiores illo.</h4>
+                            <h2>GROW you skills to advance your career path</h2>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae ullam, ea reiciendis hic architecto reprehenderit doloremque sint eius voluptas sit laborum. Eligendi adipisci fuga eaque autem minus asperiores illo.
+                            </h4>
                             <a href="" class="bt" id="get-started">Get Started</a>
                         </div>
                         <div class="right-welcome-page">
@@ -59,61 +62,72 @@
                     </div>
                     <!-- End of welcome page -->
                     <div class="category-section">
-                        <div class="category-background">
-                            <!-- fill with color -->
-                        </div>
-                        <div class="category-bucket">
+                        <div class="category-section-cont">
                             <div class="left-category">
-                                <h3>Categories</h3>
-                                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium in blanditiis sed reiciendis, officia eum error. Doloremque a culpa accusamus laudantium reprehenderit. Consectetur, omnis odit? Laboriosam hic corrupti
-                                    nisi.
-                                </h4>
-                                <button class="bt" id="learn-more">Learn More</button>
+                                <div class="left-category-heading">
+                                    <h3>Categories</h3>
+                                </div>
+                                <div class="left-category-main">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam suscipit ipsa culpa impedit repudiandae aperiam voluptates veniam autem accusantium voluptatibus, reprehenderit officiis saepe nisi amet dolor facilis obcaecati hic laborum?
+                                </div>
+                                <div class="left-category-foot">
+                                    <a href="#" class="learn-more">Learn More</a>
+                                </div>
                             </div>
+                            <!-- END OF LEFT CATEROGY -->
                             <div class="right-category">
-                                <div class="box">
-                                    <div class="top-box-element" id="royal"><span class="material-symbols-outlined">currency_bitcoin</span></div>
-                                    <div class="middle-box-element">Blockchain</div>
-                                    <div class="foot-box-element">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore possimus aut.
+                                <div class="right-category-cont">
+                                    <div class="cat-box">
+                                        <div class="cat-box-head bg-success">
+                                            <span class="material-symbols-outlined">currency_bitcoin</span>
+                                        </div>
+                                        <div class="cat-box-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae fugiat expedita facere libero.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="top-box-element bg-danger"><span class="material-symbols-outlined">donut_small</span></div>
-                                    <div class="middle-box-element ">Graphic Design</div>
-                                    <div class="foot-box-element">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore possimus aut.
+                                    <div class="cat-box">
+                                        <div class="cat-box-head bg-danger">
+                                            <span class="material-symbols-outlined">donut_small</span>
+                                        </div>
+                                        <div class="cat-box-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae fugiat expedita facere libero.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="top-box-element bg-success"><span class="material-symbols-outlined">monetization_on</span></div>
-                                    <div class="middle-box-element">Finance</div>
-                                    <div class="foot-box-element">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore possimus aut.
+                                    <div class="cat-box">
+                                        <div class="cat-box-head bg-primary">
+                                            <span class="material-symbols-outlined">monetization_on</span>
+                                        </div>
+                                        <div class="cat-box-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae fugiat expedita facere libero.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="top-box-element bg-warning"><span class="material-symbols-outlined">add_business</span></div>
-                                    <div class="middle-box-element  ">Marketing</div>
-                                    <div class="foot-box-element">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore possimus aut.
+                                    <div class="cat-box">
+                                        <div class="cat-box-head bg-warning">
+                                            <span class="material-symbols-outlined">add_business</span>
+                                        </div>
+                                        <div class="cat-box-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae fugiat expedita facere libero.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="top-box-element bg-success"><span class="material-symbols-outlined">headphones</span></div>
-                                    <div class="middle-box-element">Music</div>
-                                    <div class="foot-box-element">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore possimus aut.
+                                    <div class="cat-box">
+                                        <div class="cat-box-head bg-success">
+                                            <span class="material-symbols-outlined">headphones</span>
+                                        </div>
+                                        <div class="cat-box-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae fugiat expedita facere libero.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box">
-                                    <div class="top-box-element" id="royal"><span class="material-symbols-outlined">next_week</span></div>
-                                    <div class="middle-box-element">Business</div>
-                                    <div class="foot-box-element">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore possimus aut.
+                                    <div class="cat-box ">
+                                        <div class="cat-box-head bg-danger">
+                                            <span class="material-symbols-outlined">next_week</span>
+                                        </div>
+                                        <div class="cat-box-main">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae fugiat expedita facere libero.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- END OF RIGHT CATEGORY -->
                         </div>
                     </div>
                     <!-- END OF CATEGORY SECTION -->
@@ -281,247 +295,216 @@
                     </div>
                     <!-- END OF FREQ ASKED QUESTIONS -->
 
-
                     <!-- BEGINNING OF SLIDER -->
-
-
-                    <div class="sliding">
-                        <div class="sliding-box">
-                            <div class="sliding-header">
-                                <h3>Student's Testimonials</h3>
-
-                            </div>
-                            <div class="sliding-container">
-                                <div class="swiper">
-                                    <!-- Additional required wrapper -->
-                                    <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide">
-
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/C G 2.jpg" alt="picture"></span>
-                                                    <h5 class="name">Diana Anya</h5>
-                                                    <h6 class="position">Student</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
+                    <!-- Swiper -->
+                    <div class="student-testimonial">
+                        <div class="student-test-heading">
+                            <h4>Student Testimonials</h4>
+                        </div>
+                        <div class="swiper">
+                            <!-- <div class="swiper-heading">
+                                <h4>Student Testimonials</h4>
+                            </div> -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team3.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/C G 3.jpg" alt="picture"></span>
-                                                    <h5 class="name">Peter Smith</h5>
-                                                    <h6 class="position">Teacher</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/images (11).jpeg" alt="picture"></span>
-                                                    <h5 class="name">Paul Bush</h5>
-                                                    <h6 class="position">Cleaner</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/images (4).jpeg" alt="picture"></span>
-                                                    <h5 class="name">Joe Biden</h5>
-                                                    <h6 class="position">Student</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/images (5).jpeg" alt="picture"></span>
-                                                    <h5 class="name">Hilary Cliton</h5>
-                                                    <h6 class="position">Student</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/images (9).jpeg" alt="picture"></span>
-                                                    <h5 class="name">Beth Anya</h5>
-                                                    <h6 class="position">Banker</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/responsive-social-M.png" alt="picture"></span>
-                                                    <h5 class="name">Jaden Phlip</h5>
-                                                    <h6 class="position">Professor</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/images (9).jpeg" alt="picture"></span>
-                                                    <h5 class="name">Bishop Table</h5>
-                                                    <h6 class="position">Gardener</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="student-body">
-                                                <div class="student-profile">
-                                                    <span class="student-pic"><img id="picture" src="img/images (4).jpeg" alt="picture"></span>
-                                                    <h5 class="name">Stark Anya</h5>
-                                                    <h6 class="position">Coach</h6>
-                                                </div>
-                                                <div class="testimonial">
-                                                    <i class="fa-sharp fa-solid fa-triangle"></i>
-                                                    <div class="testimonial-message">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti saepe culpa illum expedita, possimus impedit minima perspiciatis assumenda excepturi accusantium beatae quia sed cumque quaerat, quibusdam inventore!
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
                                     </div>
-                                    <!-- If we need pagination -->
-                                    <!-- <div class="swiper-pagination"></div> -->
-
-                                    <!-- If we need navigation buttons -->
-                                    <!-- <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div> -->
-
-                                    <!-- If we need scrollbar -->
-                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team2.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team4.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team5.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team6.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team7.jpg" alt="" class="student-img">
+                                            <h4>Stark Emma</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/C G 2.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team9.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team10.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="student-test">
+                                        <div class="student-profile">
+                                            <img src="img/team11.jpg" alt="" class="student-img">
+                                            <h4>Stark Anya</h4>
+                                            <h6>Coach</h6>
+                                        </div>
+                                        <div class="test-note">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit iure doloribus officiis! Ipsum, quasi iure pariatur et quo aperiam.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+
+
+
+                            <!-- END OF FOOTER -->
                         </div>
                     </div>
-                </div>
-                <!-- END OF MAIN CONTAINER -->
-            </main>
-            <!-- END OF MAIN  -->
+                    <!-- END OF STUDENT TESTIMONIAL -->
 
-            <footer>
-                <div class="footer-container">
-                    <div class="top-foot">
-                        <div class="column">
-                            <div class="column-head">CEPHALO</div>
-                            <div class="column-body">Ifedapo</div>
-                            <div class="column-body">Moremi</div>
-                            <div class="column-body">Montensori</div>
-                        </div>
-                        <div class="column">
-                            <div class="column-head">Permalinks</div>
-                            <div class="column-body">Home</div>
-                            <div class="column-body">About</div>
-                            <div class="column-body">Courses</div>
-                        </div>
-                        <div class="column">
-                            <div class="column-head">Primacy</div>
-                            <div class="column-body">Privacy Policy</div>
-                            <div class="column-body">Terms and Conditions</div>
-                            <div class="column-body">Refund Policy</div>
-                        </div>
-                        <div class="column">
-                            <div class="column-head">Contact Us</div>
-                            <div class="column-body">+234 704 490 7610</div>
-                            <div class="column-body" id="email">iroegbu.dg@gmail.com</div>
-                            <div class="column-icon">
-                                <a href="#" class="school-social"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="#" class="school-social"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#" class="school-social"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#" class="school-social"><i class="fa-brands fa-linkedin"></i></a>
+
+                    <footer>
+                        <div class="footer-container">
+                            <div class="top-foot">
+                                <div class="column">
+                                    <div class="column-head">CEPHALO</div>
+                                    <div class="column-body">Ifedapo</div>
+                                    <div class="column-body">Moremi</div>
+                                    <div class="column-body">Montensori</div>
+                                </div>
+                                <div class="column">
+                                    <div class="column-head">Permalinks</div>
+                                    <div class="column-body">Home</div>
+                                    <div class="column-body">About</div>
+                                    <div class="column-body">Courses</div>
+                                </div>
+                                <div class="column">
+                                    <div class="column-head">Primacy</div>
+                                    <div class="column-body">Privacy Policy</div>
+                                    <div class="column-body">Terms and Conditions</div>
+                                    <div class="column-body">Refund Policy</div>
+                                </div>
+                                <div class="column">
+                                    <div class="column-head">Contact Us</div>
+                                    <div class="column-body">+234 704 490 7610</div>
+                                    <div class="column-body" id="email">iroegbu.dg@gmail.com</div>
+                                    <div class="column-icon">
+                                        <a href="#" class="school-social"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#" class="school-social"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#" class="school-social"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#" class="school-social"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-foot">
+                                Copyright <span>&copy</span> IRG-CONNECTIONS
                             </div>
                         </div>
-                    </div>
-                    <div class="bottom-foot">
-                        Copyright <span>&copy</span> IRG-CONNECTIONS
-                    </div>
+                    </footer>
                 </div>
-            </footer>
-            <!-- END OF FOOTER -->
+            </main>
         </div>
-
     </div>
-
 
 
     <!-- swiperjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;const swiper = new Swiper('.swiper', { direction: 'horizontal', slidesPerView: 3, spaceBetween: 40, centeredSlides:true, grapCursor:true, slidesPerGroup: 1,loop:
-        true, pagination: { el: '.swiper-pagination', }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, scrollbar: { el: '.swiper-scrollbar', }, });
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;const swiper = new Swiper('.swiper', { direction: 'horizontal',breakpoints: { 320: { slidesPerView: 1, slidesPerGroup: 1, spaceBetween: 40, autoplay: { delay:
+        10000, disableOnInteraction: false, } }, 768: { slidesPerView: 2, slidesPerGroup: 1, spaceBetween: 40,autoplay: { delay: 8000, disableOnInteraction: false, }}, 1251: { slidesPerView: 3, slidesPerGroup: 1, spaceBetween: 40, } }, centeredSlides:
+        true, grapCursor: true, loop: true, pagination: { el: '.swiper-pagination', }, autoplay: { delay: 8000, disableOnInteraction: false, }, pagination: { el: '.swiper-pagination', clickable: true, }, navigation: { nextEl: '.swiper-button-next', prevEl:
+        '.swiper-button-prev', }, scrollbar: { el: '.swiper-scrollbar', }, });
+
 
     </script>
     <!-- bootstrap -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <script src="JS/app.js"></script>
+    <script src="JS/about.js"></script>
 </body>
 
 </html>

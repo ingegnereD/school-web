@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipter JS test</title>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- home css -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="cat.css">
+
+
+</head>
+
+<body>
+    <div class="containeR">
+        <header>
+            <div class="nav-bar">
+                <div class="left-nav">
+                    <h3>CEPHALO</h3>
+                </div>
+                <div class="middle-nav">
+                    <a href="home.html" class="nav-dest">Home</a>
+                    <a href="about.html" class="nav-dest">About</a>
+                    <a href="courses.html" class="nav-dest">Courses</a>
+                    <a href="contact.html" class="nav-dest">Contact</a>
+                </div>
+                <div class="right-nav">
+                    <i class="fa-solid fa-bars" id="menu-bar"></i>
+                    <i class="fa-solid fa-xmark" id="close-bar"></i>
+                </div>
+            </div>
+        </header>
+        <div class="main-and-footer">
+            <main>
+                <div class="main-container">
+                    <!-- Swiper -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                            <div class="swiper-slide">Slide 10</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;const swiper = new Swiper('.swiper', { direction: 'horizontal', slidesPerView: 3, spaceBetween: 40, centeredSlides:true, grapCursor:true, slidesPerGroup: 1,loop:
+        true, pagination: { el: '.swiper-pagination', }, autoplay: { delay: 2500, disableOnInteraction: false, }, pagination: { el: '.swiper-pagination', clickable: true, },navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', },
+        scrollbar: { el: '.swiper-scrollbar', }, });
+
+    </script>
+</body>
+
+</html>

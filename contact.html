@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/homeMq.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- material symbols -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="containeR">
+        <header>
+            <div class="nav-bar">
+                <div class="left-nav">
+                    <h3>CEPHALO</h3>
+                </div>
+                <div class="middle-nav">
+                    <a href="home.html" class="nav-dest nav-d-1"><i class="fa-solid fa-house" id="nav-icon"></i>Home</a>
+                    <a href="about.html" class="nav-dest nav-d-2"><i class="fa-solid fa-question" id="nav-icon"></i>About</a>
+                    <a href="courses.html" class="nav-dest nav-d-3"><i class="fa-solid fa-building-columns" id="nav-icon"></i>Courses</a>
+                    <a href="contact.html" class="nav-dest nav-d-4"><i class="fa-solid fa-address-card" id="nav-icon"></i>Contact</a>
+                </div>
+                <div class="right-nav">
+                    <i class="fa-solid fa-bars menu-bar"></i>
+                    <i class="fa-solid fa-xmark close-bar"></i>
+                </div>
+            </div>
+        </header>
+        <!-- END OF HEADER -->
+        <div class="main-and-footer">
+            <main>
+                <div class="main-container">
+                    <div class="contact-page">
+                        <div class="left-contact-page">
+                            <div class="left-contact-flyer">
+                                <div class="contact-flyer">
+                                    <img src="img/contact-us.svg" alt="" class="flyer-img">
+                                </div>
+                                <div class="contact-note">
+                                    <h4>Contact Us</h4>
+                                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolorum numquam deleniti saepe ab? Quibusdam, ullam! Quae repudiandae corrupti dicta sunt ab! Molestiae ipsam eligendi harum nulla tempora, doloribus nesciunt.
+                                    </h6>
+                                </div>
+                                <div class="contact-gadget">
+                                    <div class="gadget-detail">
+                                        <span class="gad-icon"><i class="fa-solid fa-phone"></i></span>
+                                        <h5>+2347044907610</h5>
+                                    </div>
+                                    <div class="gadget-detail">
+                                        <span class="gad-icon"><i class="fa-solid fa-envelope"></i></span>
+                                        <h5>iroegbu.dg@gmail.com</h5>
+                                    </div>
+                                    <div class="gadget-detail">
+                                        <span class="gad-icon"><i class="fa-solid fa-location-pin"></i></span>
+                                        <h5>Osun, Nigeria</h5>
+                                    </div>
+                                </div>
+                                <div class="contact-social">
+                                    <i class="fa-brands fa-facebook" id="social-icon"></i>
+                                    <i class="fa-brands fa-instagram" id="social-icon"></i>
+                                    <i class="fa-brands fa-twitter" id="social-icon"></i>
+                                    <i class="fa-brands fa-linkedin" id="social-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-contact-page">
+                            <div class="right-contact-page-cont">
+                                <form class="contact">
+                                    <div class="name">
+                                        <div class="f-name">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="f-name" placeholder="First Name">
+                                                <div class="invalid-feedback">
+                                                    Name must be between 2 and 10 characters
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="l-name">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="l-name" placeholder="Last Name">
+                                                <div class="invalid-feedback">
+                                                    Name must be between 2 and 10 characters
+                                                </div>
+                                                <div class="valid-feedback">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END OF NAME -->
+                                    <div class="email">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="email" placeholder="Your email address">
+                                            <div class="invalid-feedback">
+                                                Enter a valid Email address
+                                            </div>
+                                            <div class="valid-feedback">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END OF EMAIL -->
+                                    <div class="message">
+                                        <textarea name="message" class="message-note" cols="100%" rows="10%0"></textarea>
+                                    </div>
+                                    <!-- END OF TEXT AREA -->
+                                    <input type="submit" value="Send Message" id="send-message">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF CONTACT PAGE -->
+                </div>
+            </main>
+            <!-- END OF MAIN -->
+            <footer>
+                <div class="footer-container">
+                    <div class="top-foot">
+                        <div class="column">
+                            <div class="column-head">CEPHALO</div>
+                            <div class="column-body">Ifedapo</div>
+                            <div class="column-body">Moremi</div>
+                            <div class="column-body">Montensori</div>
+                        </div>
+                        <div class="column">
+                            <div class="column-head">Permalinks</div>
+                            <div class="column-body">Home</div>
+                            <div class="column-body">About</div>
+                            <div class="column-body">Courses</div>
+                        </div>
+                        <div class="column">
+                            <div class="column-head">Primacy</div>
+                            <div class="column-body">Privacy Policy</div>
+                            <div class="column-body">Terms and Conditions</div>
+                            <div class="column-body">Refund Policy</div>
+                        </div>
+                        <div class="column">
+                            <div class="column-head">Contact Us</div>
+                            <div class="column-body">+234 704 490 7610</div>
+                            <div class="column-body" id="email">iroegbu.dg@gmail.com</div>
+                            <div class="column-icon">
+                                <a href="#" class="school-social"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="school-social"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="school-social"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="school-social"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-foot">
+                        Copyright <span>&copy</span> IRG-CONNECTIONS
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- contact script -->
+    <script src="JS/contact.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/form.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
