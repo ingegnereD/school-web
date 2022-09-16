@@ -96,8 +96,8 @@
             right: -5.5%;
         }
     }
-    .middle-nav-inactive {
-        animation: slideMenuOut 1900ms ease forwards;
+    .middle-nav-in-active {
+        animation: slideMenuOut 600ms ease forwards;
     }
     @keyframes slideMenuOut {
         100% {

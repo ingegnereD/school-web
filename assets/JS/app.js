@@ -70,13 +70,11 @@ add.forEach((a, i) => {
 
 function showMeu(e) {
     // For the Menu Icons
-    middleNav.style = 'display: block'
-    middleNav.classList.remove('middle-nav-inactive')
+    middleNav.classList.remove('middle-nav-in-active')
     menuBar.classList.toggle('menu-bar-active')
     setTimeout(() => {
         middleNav.classList.toggle('middle-nav-active')
         menuBar.style = 'display: none';
-        middleNav.style = 'display: block'
         closeBar.style = 'display: block'
         menuBar.classList.remove('menu-bar-active')
 
@@ -86,14 +84,15 @@ function showMeu(e) {
 
 function hideMenu(e) {
     // For the Menu Icons
-    middleNav.classList.remove('middle-nav-active')
     closeBar.classList.toggle('close-bar-active')
-    middleNav.classList.toggle('middle-nav-inactive')
     setTimeout(() => {
+        middleNav.classList.remove('middle-nav-active')
+        middleNav.classList.toggle('middle-nav-in-active')
+
+
         closeBar.style = 'display: none';
         menuBar.style = 'display: block'
         closeBar.classList.remove('close-bar-active')
-        middleNav.style = 'display: none';
 
     }, 201);
     e.preventDefault()

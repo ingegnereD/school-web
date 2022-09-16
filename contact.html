@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/homeMq.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/homeMq.css">
+
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -52,7 +53,7 @@
                         <div class="left-contact-page">
                             <div class="left-contact-flyer">
                                 <div class="contact-flyer">
-                                    <img src="img/contact-us.svg" alt="" class="flyer-img">
+                                    <img src="assets/img/contact-us.svg" alt="" class="flyer-img">
                                 </div>
                                 <div class="contact-note">
                                     <h4>Contact Us</h4>
@@ -176,9 +177,31 @@
     </div>
 
     <!-- contact script -->
-    <script src="JS/contact.js"></script>
-    <script src="JS/app.js"></script>
-    <script src="JS/form.js"></script>
+    <script src="assets/JS/contact.js"></script>
+    <script src="assets/JS/app.js"></script>
+    <script src="assets/JS/form.js"></script>
+
+
+    <!-- send email via smtpjs -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const form = document.querySelector('form')
+        form.addEventListener('submit', (e) => {
+            console.log(1);
+            Email.send({
+                Host: "smtp.yourisp.com",
+                Username: "ireugbudavid@gmail.com",
+                Password: "Iroegbu_2001",
+                To: 'iroegbu.dg@gmail.com',
+                From: "ireugbudavid@gmail.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+            e.preventDefault()
+        });
+    </script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
